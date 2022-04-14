@@ -9,7 +9,7 @@ namespace MvcStok.Controllers
     public class DenemeController : Controller
     {
         // GET: Deneme
-        // GET: Deneme
+        // GET: Dene
         // GET: Deneme
         public ActionResult Index()
         {
