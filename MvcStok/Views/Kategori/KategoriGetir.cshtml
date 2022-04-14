@@ -1,0 +1,20 @@
+﻿@model MvcStok.Models.Entity.TBLKATEGORILER
+@{
+    ViewBag.Title = "GUNCELLE";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("Guncelle", "Kategori", FormMethod.Post))
+{
+    //Bu formda bir action oldugu zaman güncelleyi çalıştıracak.
+    //Guncelle nerede? Kategoride. Ne zaman çalışacak form method mpost oldugunda.
+
+<div class="form-group">
+    @Html.LabelFor(m => m.KATEGORIID)
+    @Html.TextBoxFor(m => m.KATEGORIID, new { @class = "form-control" })
+
+    @Html.LabelFor(m => m.KATEGORIAD)
+    @Html.TextBoxFor(m => m.KATEGORIAD, new { @class="form-control" })
+</div>
+}
+

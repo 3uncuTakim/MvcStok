@@ -1,0 +1,29 @@
+﻿@using MvcStok.Models.Entity
+@model List<TBLKATEGORILER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>KATEGORİ ID</th>
+        <th>KATEGORİ ADI</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+    </tr><!-- tr table row demek-->
+    <tbody>
+        @foreach (var item in Model) //Buradaki Modeli yulkarıdaki @model'den geliyor.
+        {
+        <tr>
+            <th>@item.KATEGORIID</th><!--td table data demek. ince olur. th kalındr.-->
+            <td>@item.KATEGORIAD</td>
+            <td><a href="/KATEGORI/SIL/@item.KATEGORIID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/KATEGORI/GUNCELLE/@item.KATEGORIID" class="btn btn-success" >GÜNCELLE</a></td>
+        </tr>
+
+        }
+    </tbody>
+</table>
+<a href="/KATEGORI/YeniKategori/" class="btn btn-primary">YENİ KATEGORİ EKLE</a>
