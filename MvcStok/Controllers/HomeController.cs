@@ -22,6 +22,7 @@ namespace MvcStok.Controllers
             //acıklama
             return View();
         }
+        //Debeneeee
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
