@@ -17,7 +17,10 @@ namespace MvcStok.Controllers
         {
             return View();
         }
-
+        public ActionResult Index3()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
