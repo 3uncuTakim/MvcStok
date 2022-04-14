@@ -19,6 +19,7 @@ namespace MvcStok.Controllers
         }
         public ActionResult Index3()
         {
+            //acıklama
             return View();
         }
         public ActionResult About()
